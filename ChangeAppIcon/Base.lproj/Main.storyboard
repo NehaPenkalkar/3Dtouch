@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ChangeAppIcon" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T2m-dP-VaY">
+                                <rect key="frame" x="157" y="398" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="T2m-dP-VaY" secondAttribute="height" multiplier="1:1" id="GCc-3S-Mk3"/>
+                                    <constraint firstAttribute="width" constant="100" id="wtc-gT-rFI"/>
+                                </constraints>
+                                <state key="normal" image="AppStore.png"/>
+                                <connections>
+                                    <action selector="appStoreTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="byr-AA-sSk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QUG-rI-ev6">
+                                <rect key="frame" x="157" y="228" width="100" height="100"/>
+                                <state key="normal" image="Game.png"/>
+                                <connections>
+                                    <action selector="gameTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dRY-G9-xZr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0cf-SP-HQU">
+                                <rect key="frame" x="157" y="568" width="100" height="100"/>
+                                <state key="normal" image="appicon.png"/>
+                                <connections>
+                                    <action selector="spaceTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LyW-rW-7Gf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="T2m-dP-VaY" firstAttribute="top" secondItem="QUG-rI-ev6" secondAttribute="bottom" constant="70" id="KV4-4S-BG8"/>
+                            <constraint firstItem="0cf-SP-HQU" firstAttribute="height" secondItem="T2m-dP-VaY" secondAttribute="height" id="NSY-oZ-H20"/>
+                            <constraint firstItem="0cf-SP-HQU" firstAttribute="top" secondItem="T2m-dP-VaY" secondAttribute="bottom" constant="70" id="NZf-ee-r6i"/>
+                            <constraint firstItem="T2m-dP-VaY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RIy-Ja-rUY"/>
+                            <constraint firstItem="QUG-rI-ev6" firstAttribute="width" secondItem="T2m-dP-VaY" secondAttribute="width" id="Sc5-5V-LJo"/>
+                            <constraint firstItem="T2m-dP-VaY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="d79-ku-u7c"/>
+                            <constraint firstItem="QUG-rI-ev6" firstAttribute="centerX" secondItem="T2m-dP-VaY" secondAttribute="centerX" id="fqw-VL-sN7"/>
+                            <constraint firstItem="QUG-rI-ev6" firstAttribute="height" secondItem="T2m-dP-VaY" secondAttribute="height" id="opW-ur-oZU"/>
+                            <constraint firstItem="0cf-SP-HQU" firstAttribute="centerX" secondItem="T2m-dP-VaY" secondAttribute="centerX" id="puI-Z4-4o7"/>
+                            <constraint firstItem="0cf-SP-HQU" firstAttribute="width" secondItem="T2m-dP-VaY" secondAttribute="width" id="rj4-bO-1eG"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="13" y="46"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="AppStore.png" width="66.5" height="66.5"/>
+        <image name="Game.png" width="341.5" height="341.5"/>
+        <image name="appicon.png" width="300" height="300"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
